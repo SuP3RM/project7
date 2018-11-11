@@ -6,6 +6,19 @@ class List extends React.Component {
     // list locations
     const locations = this.props.locations;
     return ( <
+      nav role = "navigation" >
+      <
+      div id = "menuToggle" >
+
+      <
+      input type = "checkbox" / >
+
+      <
+      span > < /span> <
+      span > < /span> <
+      span > < /span>
+
+      <
       div id = "list" >
       <
       h2 > Locations < /h2> <
@@ -28,8 +41,7 @@ class List extends React.Component {
           <
           div >
           <
-          p className = "title" >
-          Place: {
+          p className = "title" > Place: {
             " "
           } <
           button href = "#"
@@ -37,8 +49,7 @@ class List extends React.Component {
             () => this.props.showInfoContent(loc)
           } > {
             loc.venue.name
-          } <
-          /button  > <
+          } < /button > <
           /p> <
           p > Address: {
             loc.venue.location.address
@@ -46,9 +57,10 @@ class List extends React.Component {
           /div> <
           /li>
         ))
-      } <
-      /ol> <
-      /div>
+      } < /ol> <
+      /div> <
+      /div> <
+      /nav>
     );
   }
 }
