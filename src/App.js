@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import Header from './components/Header';
+import Content from './components/Content';
+//import List from './components/List';
+//import Map from './components/Map';
+
 import './App.css';
 
 class App extends Component {
@@ -30,7 +35,9 @@ class App extends Component {
   render() {
     this.loadScript();
     return (
-      <div className="App" id="map">
+      <div className="App">
+        <Header />
+        <Content />
       </div>
     );
   }
