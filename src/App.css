@@ -6,10 +6,16 @@
   min-height: 100vh;
 }
 
+#heading {
+  font-size: 150%;
+  margin: 5px;
+}
+
 #list {
   width: 25%;
   height: 100%;
   background-color: lightgrey;
   z-index: 1;
   position: absolute;
+  overflow-y: scroll;
 }
