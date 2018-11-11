@@ -8,19 +8,17 @@ class List extends React.Component {
     return (
       <div id="list">
         <h2>Locations</h2>
-        <input type="text" />
+        <p>{this.props.queryString}</p>
+        <input type="text" value = {this.props.queryString} onChange={e => this.props.handleChange(e.target.value)} />
         <ol>
           {locations.map(loc => (
             <li key={loc.venue.id}>
               <div>
                 <p className="title">
-                  Name: {' '}
-                  <a
-                    href="#"
-                    onClick={ () => this.props.showInfoContent(loc)}
-                  >
+                  Name: {" "}
+                  <button href="#" onClick={ () => this.props.showInfoContent(loc)}>
                     {loc.venue.name}
-                  </a>
+                  </button  >
                 </p>
                 <p>Address: {loc.venue.location.address}</p>
               </div>

@@ -15,23 +15,15 @@ class Map extends React.Component {
           title: locations[i].venue.id
         });
         marker.addListener('click', () => {
-          let content = this.prepareContent(locations[i]);
+          let content = this.props.prepareContent(locations[i]);
           infoWindow.setContent(content);
           infoWindow.open(window.mapObject, marker);
         });
         this.markers.push(marker);
       }
+      window.infoWindow = infoWindow;
       window.markers = this.markers;
     }
-  };
-
-  prepareContent = location => {
-    return `<div>
-    <p className="title">
-      Name: <a href="#">${location.venue.name}</a>
-    </p>
-    <p>Address: ${location.venue.location.address}</p>
-    </div>`;
   };
 
   render() {
