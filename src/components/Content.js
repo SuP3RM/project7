@@ -6,10 +6,11 @@ import * as LocationsAPI from '../api/Locations';
 class Content extends React.Component {
   state = {
     locations: [],
+    queryResult: [],
     query: ''
   };
   componentDidMount() {
-    LocationsAPI.getLocations().then(resp => this.setState({locations:resp})
+    LocationsAPI.getLocations().then(resp => this.setState({locations:resp, queryResult: resp})
     );
   }
 
@@ -33,8 +34,19 @@ class Content extends React.Component {
   };
 
   handleTextChange = query => {
-    this.setState({query});
-  }
+    this.setState({ query });
+    if (query) {
+      this.setState({
+        locations: this.filterLocations(query, this.state.locations)
+      })
+    } else {
+      this.setState({locations: this.state.queryResult})
+    }
+  };
+
+  filterLocations = (query, locations) => {
+    return locations.filter(location => location.venue.name.includes(query));
+  };
 
   render() {
     console.log(this.state.locations);
