@@ -18,4 +18,5 @@
   z-index: 1;
   position: absolute;
   overflow-y: scroll;
+  text-decoration-color: white;
 }

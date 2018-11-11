@@ -36,7 +36,7 @@ class Map extends React.Component {
     console.log("locations", this.props.locations);
     this.removeMapMarkers();
     this.addMarkers(this.props.locations);
-    return <div id = "map" />;
+    return <div id = "map" / > ;
   }
 }
 

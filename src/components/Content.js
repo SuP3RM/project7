@@ -10,8 +10,10 @@ class Content extends React.Component {
     query: ''
   };
   componentDidMount() {
-    LocationsAPI.getLocations().then(resp => this.setState({locations:resp, queryResult: resp})
-    );
+    LocationsAPI.getLocations().then(resp => this.setState({
+      locations: resp,
+      queryResult: resp
+    }));
   }
 
   handleClickEvent = (location) => {
@@ -34,13 +36,17 @@ class Content extends React.Component {
   };
 
   handleTextChange = query => {
-    this.setState({ query });
+    this.setState({
+      query
+    });
     if (query) {
       this.setState({
         locations: this.filterLocations(query, this.state.locations)
       })
     } else {
-      this.setState({locations: this.state.queryResult})
+      this.setState({
+        locations: this.state.queryResult
+      })
     }
   };
 
@@ -51,19 +57,30 @@ class Content extends React.Component {
   render() {
     console.log(this.state.locations);
 
-    return (
-      <div className="content">
-        <List
-          locations={this.state.locations}
-          showInfoContent={this.handleClickEvent}
-          queryString = {this.state.query}
-          handleChange = {this.handleTextChange}
-         />
-        <Map
-          locations={this.state.locations}
-          prepareContent={this.prepareContent}
-        />
-      </div>
+    return ( <
+      div className = "content" >
+      <
+      List locations = {
+        this.state.locations
+      }
+      showInfoContent = {
+        this.handleClickEvent
+      }
+      queryString = {
+        this.state.query
+      }
+      handleChange = {
+        this.handleTextChange
+      }
+      /> <
+      Map locations = {
+        this.state.locations
+      }
+      prepareContent = {
+        this.prepareContent
+      }
+      /> <
+      /div>
     );
   }
 }

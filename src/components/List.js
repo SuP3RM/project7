@@ -5,27 +5,50 @@ class List extends React.Component {
   render() {
     // list locations
     const locations = this.props.locations;
-    return (
-      <div id="list">
-        <h2>Locations</h2>
-        <p>{this.props.queryString}</p>
-        <input type="text" value = {this.props.queryString} onChange={e => this.props.handleChange(e.target.value)} />
-        <ol>
-          {locations.map(loc => (
-            <li key={loc.venue.id}>
-              <div>
-                <p className="title">
-                  Name: {" "}
-                  <button href="#" onClick={ () => this.props.showInfoContent(loc)}>
-                    {loc.venue.name}
-                  </button  >
-                </p>
-                <p>Address: {loc.venue.location.address}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </div>
+    return ( <
+      div id = "list" >
+      <
+      h2 > Locations < /h2> <
+      p > {
+        this.props.queryString
+      } < /p> <
+      input type = "text"
+      value = {
+        this.props.queryString
+      }
+      onChange = {
+        e => this.props.handleChange(e.target.value)
+      }
+      /> <
+      ol > {
+        locations.map(loc => ( <
+          li key = {
+            loc.venue.id
+          } >
+          <
+          div >
+          <
+          p className = "title" >
+          Place: {
+            " "
+          } <
+          button href = "#"
+          onClick = {
+            () => this.props.showInfoContent(loc)
+          } > {
+            loc.venue.name
+          } <
+          /button  > <
+          /p> <
+          p > Address: {
+            loc.venue.location.address
+          } < /p> <
+          /div> <
+          /li>
+        ))
+      } <
+      /ol> <
+      /div>
     );
   }
 }
