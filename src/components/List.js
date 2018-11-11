@@ -5,7 +5,7 @@ class List extends React.Component {
   render() {
       // lists of locations;
     return (
-      <div>
+      <div id="list">
         <h2>List</h2>
       </div>
     );
