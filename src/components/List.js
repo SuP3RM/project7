@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from './Map';
+//import Map from './Map';
 
 class List extends React.Component {
   render() {
@@ -14,7 +14,13 @@ class List extends React.Component {
             <li key={loc.venue.id}>
               <div>
                 <p className="title">
-                  Name: <a href="#">{loc.venue.name}</a>
+                  Name: {' '}
+                  <a
+                    href="#"
+                    onClick={ () => this.props.showInfoContent(loc)}
+                  >
+                    {loc.venue.name}
+                  </a>
                 </p>
                 <p>Address: {loc.venue.location.address}</p>
               </div>

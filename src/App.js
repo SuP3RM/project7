@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+import './App.css';
 import Header from './components/Header';
 import Content from './components/Content';
 //import List from './components/List';
 //import Map from './components/Map';
 
-import './App.css';
-
 class App extends Component {
   initMap() {
-    new window.google.maps.Map(document.getElementById('map'), {
+    let map = new window.google.maps.Map(document.getElementById('map'), {
       center: {lat: 41.8781, lng: -87.6298},
       zoom: 12
     });
+    window.mapObject = map;
   }
 
   loadScript() {
@@ -25,7 +25,7 @@ class App extends Component {
 
   createMapS() {
     let mapScript = document.createElement('script');
-    const API_KEY = 'AIzaSyDfbkIRQznf-1DUdSQ0AQzSGWSfZgTi8s4';
+    const API_KEY = 'AIzaSyCEL036n0NG_bZMe2OnCiOOXsVXdFRA7Uc';
     mapScript.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initMap`;
     mapScript.async = true;
     mapScript.defer = true;
