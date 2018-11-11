@@ -12,7 +12,7 @@ class Content extends React.Component {
     console.log("DATA");
     LocationsAPI.getLocations().then(resp => this.setState({locations:resp})
     );
-  }
+  };
 
   handleClickEvent(location) {
     for (let i = 0; i < window.markers.length; i++) {
@@ -20,7 +20,7 @@ class Content extends React.Component {
         window.infoWindow.open(window.mapObject, window.markers[i]);
       }
     }
-  }
+  };
 
   render() {
     console.log(this.state.locations);
