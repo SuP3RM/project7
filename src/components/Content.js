@@ -8,12 +8,12 @@ class Content extends React.Component {
     locations: []
   };
   componentDidMount() {
-    console.log("data");
-    LocationsAPI.getLocations().then(resp => this.setState({ locations: resp })
+    console.log("DATA");
+    LocationsAPI.getLocations().then(resp => this.setState({locations:resp})
     );
   }
   render() {
-    console.log("this.state.locations");
+    console.log(this.state.locations);
 
     return (
       <div className="content">

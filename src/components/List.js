@@ -3,7 +3,7 @@ import Map from './Map';
 
 class List extends React.Component {
   render() {
-
+    // list locations
     const locations = this.props.locations;
     return (
       <div id="list">
@@ -13,7 +13,9 @@ class List extends React.Component {
           {locations.map(loc => (
             <li key={loc.venue.id}>
               <div>
-                <h2>Name: {loc.venue.name}</h2>
+                <p className="title">
+                  Name: <a href="#">{loc.venue.name}</a>
+                </p>
                 <p>Address: {loc.venue.location.address}</p>
               </div>
             </li>

@@ -8,10 +8,10 @@ import './App.css';
 
 class App extends Component {
   initMap() {
-    let map = new window.google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
+    new window.google.maps.Map(document.getElementById('map'), {
+      center: {lat: 41.8781, lng: -87.6298},
+      zoom: 12
+    });
   }
 
   loadScript() {
