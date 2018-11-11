@@ -26,8 +26,15 @@ class Map extends React.Component {
     }
   };
 
+  removeMapMarkers = () => {
+    for (let i = 0; i < this.markers.length; i++) {
+      this.markers[i].setMap(null);
+    }
+  }
+
   render() {
     console.log("locations", this.props.locations);
+    this.removeMapMarkers();
     this.addMarkers(this.props.locations);
     return <div id = "map" />;
   }
