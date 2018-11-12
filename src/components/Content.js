@@ -55,8 +55,6 @@ class Content extends React.Component {
   };
 
   render() {
-    console.log(this.state.locations);
-
     return ( <
       div className = "content" >
       <

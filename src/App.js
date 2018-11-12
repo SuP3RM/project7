@@ -1,6 +1,4 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Content from './components/Content';
@@ -96,8 +94,7 @@ class App extends Component {
     let scriptElement = this.createMapS();
     let scriptsOnPage = document.getElementsByTagName('script');
     let script = scriptsOnPage[0];
-    console.log(scriptsOnPage);
-    script.parentNode.insertBefore(scriptElement, scriptElement[0]);
+    script.parentNode.insertBefore(scriptElement, script);
     window.initMap = this.initMap;
   }
 
