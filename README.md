@@ -1,6 +1,6 @@
 # Udacity Project 7 Neighborhood Map
 
-### Description from Udacity
+### Based off Udacity's description
 I developed a single-page application using React featuring a map of Chicago neighborhoods. Then I added additional functionality to this app, including map markers (to identify popular locations),a list view to support simple browsing of all locations, and a search function inside the list to easily discover these locations. I researched and implemented third-party APIs (Foursquare) that provide additional information about each of these locations.
 
 ### How to run?
