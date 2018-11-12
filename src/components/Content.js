@@ -51,7 +51,7 @@ class Content extends React.Component {
   };
 
   filterLocations = (query, locations) => {
-    return locations.filter(location => location.venue.name.includes(query));
+    return locations.filter(location => location.venue.name.toLowerCase().includes(query.toLowerCase()));
   };
 
   render() {
