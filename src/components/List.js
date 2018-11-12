@@ -11,7 +11,8 @@ class List extends React.Component {
       div id = "menuToggle" >
 
       <
-      input type = "checkbox" / >
+      input id = "hidchk"
+      type = "checkbox" / >
 
       <
       span > < /span> <
@@ -24,9 +25,6 @@ class List extends React.Component {
       div id = "list" >
       <
       h2 > Locations < /h2> <
-      p > {
-        this.props.queryString
-      } < /p> <
       input id = "filterbar"
       type = "text"
       value = {
@@ -52,18 +50,18 @@ class List extends React.Component {
             () => this.props.showInfoContent(loc)
           } > {
             loc.venue.name
-          } < /button > <
-          /p> <
+          } < /button > < /
+          p > <
           p > Address: {
             loc.venue.location.address
-          } < /p> <
-          /div> <
+          } < /p> < /
+          div > <
           /li>
         ))
-      } < /ol> <
-      /div> <
-      /ul> <
-      /div> <
+      } < /ol> < /
+      div > <
+      /ul> < /
+      div > <
       /nav>
     );
   }
