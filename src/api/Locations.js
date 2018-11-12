@@ -4,6 +4,6 @@ const CLIENT_SECRET = "GIRXZFHZEMIID0A12MB3ISZ1DVFEZ5TEHZZ1OTDFQRSDNMQR";
 export const getLocations = () => {
   return fetch(`https://api.foursquare.com/v2/venues/explore?cat=food&near=chicago&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=20181101
 `)
-    .then(resp => resp.json())
+    .then(response => response.json())
     .then(result => result.response.groups[0].items);
 };

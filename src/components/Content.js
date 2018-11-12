@@ -10,9 +10,9 @@ class Content extends React.Component {
     query: ''
   };
   componentDidMount() {
-    LocationsAPI.getLocations().then(resp => this.setState({
-      locations: resp,
-      queryResult: resp
+    LocationsAPI.getLocations().then(response => this.setState({
+      locations: response,
+      queryResult: response
     }));
   }
 
