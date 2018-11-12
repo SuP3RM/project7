@@ -15,7 +15,7 @@ I developed a single-page application using React featuring a map of Chicago nei
 Udacity Project Summary
 
 ## Contributions:
-Thank you to all FEND students in Slack to help with this project and especially Kehinde Onadipe ( Kehinde (FEND) ) for sharing his walkthrough videos that helped me so much during the development process of this project!
+Thank you to all FEND students in Slack that helped with this project and especially Kehinde Onadipe ( Kehinde (FEND) ) for sharing his walkthrough videos that helped me so much during the development process of this project!
 Videos: (<https://www.youtube.com/watch?v=kadSBAsjDXI>)
 Kehinde's YouTube Channel: kenjournal (<https://www.youtube.com/channel/UCjsqh3zEzzszyfp0DZ3EOuQ>)
 
