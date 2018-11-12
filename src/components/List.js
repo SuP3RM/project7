@@ -19,13 +19,16 @@ class List extends React.Component {
       span > < /span>
 
       <
+      ul id = "menu" >
+      <
       div id = "list" >
       <
       h2 > Locations < /h2> <
       p > {
         this.props.queryString
       } < /p> <
-      input type = "text"
+      input id = "filterbar"
+      type = "text"
       value = {
         this.props.queryString
       }
@@ -59,6 +62,7 @@ class List extends React.Component {
         ))
       } < /ol> <
       /div> <
+      /ul> <
       /div> <
       /nav>
     );
