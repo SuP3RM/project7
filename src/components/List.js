@@ -12,6 +12,7 @@ class List extends React.Component {
 
       <
       input id = "hidchk"
+      aria-label = "checkbox"
       type = "checkbox" / >
 
       <
@@ -20,12 +21,13 @@ class List extends React.Component {
       span > < /span>
 
       <
-      ul id = "menu" >
+      ul aria-hidden="true" id = "menu" >
       <
-      div id = "list" >
+      div role = "list" id = "list" >
       <
       h2 > Locations < /h2> <
       input id = "filterbar"
+      aria-label = "form"
       type = "text"
       value = {
         this.props.queryString
@@ -42,7 +44,7 @@ class List extends React.Component {
           <
           div >
           <
-          p className = "title" > Place: {
+          p className = "title" > Location: {
             " "
           } <
           button href = "#"

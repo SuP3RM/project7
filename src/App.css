@@ -13,8 +13,8 @@
 }
 
 #list {
-  width: 87%;
-  height: 470%;
+  width: 87.5%;
+  height: 90vh;
   background-color: #FFFAF0;
   z-index: 1;
   position: absolute;
@@ -39,6 +39,11 @@ button {
  * MIT License
  */
 body {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
   margin: 0;
   padding: 0;
   /* make it look decent enough */
@@ -148,6 +153,10 @@ a:hover {
 #menuToggle input:checked~ul {
   transform: none;
 }
+
+
+
+
 
 /* ===== ARIA Skip Link ===== */
 .skip-link {
