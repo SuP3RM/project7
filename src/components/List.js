@@ -25,7 +25,7 @@ class List extends React.Component {
       <
       div role = "list" id = "list" >
       <
-      h2 > Locations < /h2> <
+      h2 >Locations< /h2> <
       input id = "filterbar"
       aria-label = "form"
       type = "text"
@@ -44,7 +44,7 @@ class List extends React.Component {
           <
           div >
           <
-          p className = "title" > Location: {
+          p className = "title" >Spot: {
             " "
           } <
           button href = "#"
