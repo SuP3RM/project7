@@ -22,6 +22,7 @@ class Content extends React.Component {
         let content = this.prepareContent(location);
         window.infoWindow.setContent(content);
         window.infoWindow.open(window.mapObject, window.markers[i]);
+        window.markers[i].setAnimation(window.google.maps.Animation.BOUNCE);
       }
     }
   }
