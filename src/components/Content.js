@@ -42,11 +42,11 @@ class Content extends React.Component {
     if (query) {
       this.setState({
         locations: this.filterLocations(query, this.state.locations)
-      })
+      });
     } else {
       this.setState({
         locations: this.state.queryResult
-      })
+      });
     }
   };
 
@@ -77,8 +77,8 @@ class Content extends React.Component {
       prepareContent = {
         this.prepareContent
       }
-      /> <
-      /div>
+      /> < /
+      div >
     );
   }
 }

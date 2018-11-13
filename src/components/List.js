@@ -1,5 +1,4 @@
 import React from 'react';
-//import Map from './Map';
 
 class List extends React.Component {
   render() {
