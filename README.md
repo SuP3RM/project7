@@ -8,8 +8,8 @@ I developed a single-page application using React featuring a map of Chicago nei
 2. Clone this repo with git or download and extract via zip
 3. Open terminal and change directory (cd) into project root file
 4. Run npm install
-5. Run npm start
-6. Open browser to localhost:3000
+5. Run npm start (or 'yarn start' if installed)
+6. Open browser to localhost:3000 (incognito mode works best)
 7. Enjoy! :D
 
 Udacity Project Summary
