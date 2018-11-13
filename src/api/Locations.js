@@ -6,4 +6,6 @@ export const getLocations = () => {
 `)
     .then(response => response.json())
     .then(result => result.response.groups[0].items);
+    // You should gracefully handle any potential errors, by adding some visible indication on the page if the Foursquare API doesn't load. :muscle:
+    // Take a look at the catch() method for some pointers on how to correct this issue.
 };
