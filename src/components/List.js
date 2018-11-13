@@ -46,7 +46,7 @@ class List extends React.Component {
           p className = "title" >Spot: {
             " "
           } <
-          button href = "#"
+          button id = "button" href = "#"
           onClick = {
             () => this.props.showInfoContent(loc)
           } > {

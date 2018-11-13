@@ -104,7 +104,6 @@ class App extends Component {
     mapScript.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initMap`;
     mapScript.async = true;
     mapScript.defer = true;
-    // There has to be some visible indication on the page if the Google Maps API doesn't load.
     return mapScript;
   }
 

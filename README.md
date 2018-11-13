@@ -12,7 +12,8 @@ I developed a single-page application using React featuring a map of Chicago nei
 6. Open browser to localhost:3000 (incognito mode works best)
 7. Enjoy! :D
 
-Udacity Project Summary
+### Offline mode
+- Resources cached using Create React App's default service worker functions. Available in production mode only.
 
 ## Contributions:
 Thank you to all FEND students in Slack that helped with this project and especially Kehinde Onadipe ( Kehinde (FEND) ) for sharing his walkthrough videos that helped me so much during the development process of this project!
