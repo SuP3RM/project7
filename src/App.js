@@ -104,6 +104,9 @@ class App extends Component {
     mapScript.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initMap`;
     mapScript.async = true;
     mapScript.defer = true;
+    mapScript.onerror = function () {
+      alert("Map script failed to load, the application might not work as expected, check source.");
+    };
     return mapScript;
   }
 

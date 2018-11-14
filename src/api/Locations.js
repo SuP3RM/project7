@@ -8,7 +8,7 @@ by - TJ VanToll
 
 function handleErrors(response) {
   if (!response.ok) {
-    throw Error(response.statusText);
+    alert("CLIENT API script failed to load due to wrong CLIENT keys. Please check if CLIENT keys are correct");
   }
   return response;
 }

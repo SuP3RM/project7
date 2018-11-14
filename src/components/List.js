@@ -26,13 +26,13 @@ class List extends React.Component {
       <
       h2 >Locations< /h2> <
       input id = "filterbar"
-      aria-label = "form"
+      aria-label = "filter"
       type = "text"
       value = {
         this.props.queryString
       }
       onChange = {
-        e => this.props.handleChange(e.target.value)
+        error => this.props.handleChange(error.target.value)
       }
       /> <
       ol > {
