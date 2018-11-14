@@ -1,4 +1,6 @@
-/*import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
 import './App.css';
 
 class ErrorScreen extends Component {
@@ -7,11 +9,12 @@ class ErrorScreen extends Component {
   }
 
   render() {
-    return (
-      <h1 className='error-screen-message'>{this.state.errMsg}</h1>
+    return ( <
+      h1 className = 'error-screen-message' > {
+        this.state.errMsg
+      } < /h1>
     )
   }
 }
 
 export default ErrorScreen;
-*/
