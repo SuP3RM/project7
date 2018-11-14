@@ -36,7 +36,8 @@ class Map extends React.Component {
   render() {
     this.removeMapMarkers();
     this.addMarkers(this.props.locations);
-    return <div role="application" id = "map" / > ;
+    return <div role = "application"
+    id = "map" / > ;
   }
 }
 
