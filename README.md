@@ -12,6 +12,9 @@ I developed a single-page application using React featuring a map of Chicago nei
 6. Open browser to localhost:3000 (incognito mode works best)
 7. Enjoy! :D
 
+### Side Note
+If want to develop in production build, use `npm build` or `yarn build`
+
 ### Offline mode
 - Resources cached using Create React App's default service worker functions. Available in production mode only.
 

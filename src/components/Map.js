@@ -36,8 +36,7 @@ class Map extends React.Component {
   render() {
     this.removeMapMarkers();
     this.addMarkers(this.props.locations);
-    return <div id = "map" / > ;
-    // Consider using the role attribute for your Google Map, because it's possible to use a screen reader to interact with it.
+    return <div role="application" id = "map" / > ;
   }
 }
 
